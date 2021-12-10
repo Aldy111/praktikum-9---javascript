@@ -13,7 +13,7 @@
   *
   * @hint - Gunakan looping for of
   */
-  const index = () => {
+  const index = function() {
 
     for (const fruit of fruits){
       console.log(fruit);
@@ -30,7 +30,7 @@
   *
   * @hint - Gunakan method push
   */
-  const store = (name) => {
+  const store = function(name) {
     fruits.push(name);
     index();
   }
@@ -44,7 +44,7 @@
   * @param {number} position - Posisi atau index yang ingin diupdate.
   * @param {string} name - Nama buah yang baru.
   */
-  const update = (position , name) => {
+  const update = function(position , name) {
 
     fruits[position] = name;
     index();
@@ -60,7 +60,7 @@
   *
   * @hint - Gunakan method splice
   */
-const destroy = (position) => {
+const destroy = function(position) {
 
   fruits.splice(position,1);
   index();
